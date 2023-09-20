@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class interestRate {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int cardBalance = 5000;
@@ -10,7 +10,7 @@ public class Main {
 
         double firstMonth = cardBalance * interestRate;
         double firstMonthTotal = firstMonth + cardBalance;
-        double secondMonth = firstMonth * interestRate;
+        double secondMonth = firstMonthTotal * interestRate;
         double secondMonthTotal = secondMonth + firstMonthTotal;
 
         System.out.println("The first month total is: " + firstMonthTotal);
